@@ -31,4 +31,8 @@ export class HomeComponent implements OnInit {
     this.quotes.push(quote);
   }
 
+  deleteQuote(index): void {
+    this.quotes.splice(index, 1);
+  }
+
 }
