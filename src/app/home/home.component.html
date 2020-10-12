@@ -1,9 +1,22 @@
 <div class="container">
-  <h2>Daily Quotes</h2>
+  <h3>Daily Quotes</h3>
+  <hr>
+
   <div class="row">
     <div class="col-md-6">
-      <app-add-quote></app-add-quote>
+Form Here
     </div>
-    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div>
+          <h6 id={{i}} >{{quote.name}}</h6>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">More</button>
+        </div>
+
+        <div *ngIf='quote.showDetails'>
+          <app-quote-details [quote]="quote"></app-quote-details>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
