@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AddQuoteComponent } from './home/add-quote/add-quote.component';
 import { QuoteDetailsComponent } from './home/quote-details/quote-details.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuoteDetailsComponent } from './home/quote-details/quote-details.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
