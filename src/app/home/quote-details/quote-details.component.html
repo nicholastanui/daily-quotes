@@ -1,6 +1,6 @@
 <small>
   <div>
     Author: {{quote.author}} | <span (click)="upVote(quote)">Up: {{quote.upVote}}</span> | <span (click)="downVote(quote)">Down: {{quote.downVote}}</span>
-    <span class="float-right">Created: {{quote.created | date}}</span>
+    <span class="float-right">Created: {{quote.created | dateDuration}} days ago</span>
   </div>
 </small>
