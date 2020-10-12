@@ -1,1 +1,1 @@
-<p>Author: {{quote.author}} | Up: {{quote.upVote}} | Down: {{quote.downVote}}</p>
+<p>Author: {{quote.author}} | <span (click)="upVote(quote)">Up: {{quote.upVote}}</span> | <span (click)="downVote(quote)">Down: {{quote.downVote}}</span></p>
