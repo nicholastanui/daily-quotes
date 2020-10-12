@@ -9,8 +9,8 @@ Form Here
     <div class="col-md-6">
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
-          <h6 id={{i}} >{{quote.name}}</h6>
-          <button (click)='toggleDetails(i)' class="btn btn-primary">More</button>
+          <h6 id={{i}} >{{quote.name}} <span (click)='toggleDetails(i)' class="badge badge-secondary">More</span></h6>
+<!--          <button (click)='toggleDetails(i)' class="btn btn-primary">More</button>-->
         </div>
 
         <div *ngIf='quote.showDetails'>
