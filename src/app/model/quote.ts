@@ -7,6 +7,7 @@ export class Quote {
   downVote: number;
   created: Date;
   showDetails: boolean;
+  topQuote: boolean;
 
   constructor(id: number, name: string, author: string, submitter: string, created: Date) {
     this.id = id;
@@ -17,5 +18,6 @@ export class Quote {
     this.downVote = 0;
     this.created = created;
     this.showDetails = false;
+    this.topQuote = false;
   }
 }

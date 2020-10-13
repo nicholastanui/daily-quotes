@@ -16,9 +16,9 @@
         <div class="card-body">
           <h5 class="card-title">Available Quotes</h5>
           <div *ngFor='let quote of quotes;let i = index'>
-            <div class="alert alert-info" >
+            <div class="alert alert-secondary" >
               <p id={{i}} >{{quote.name}}
-                <span (click)='deleteQuote(i)' class="badge badge-danger hover float-right">Delete</span>
+                <span (click)='deleteQuote(i)' class="badge badge-danger hover float-right">&times;</span>
                 <span (click)='toggleDetails(i)' class="badge badge-secondary hover float-right mr-1">More</span>
               </p>
               <div *ngIf='quote.showDetails'>

@@ -35,4 +35,8 @@ export class HomeComponent implements OnInit {
     this.quotes.splice(index, 1);
   }
 
+  checkFavQuote(): void {
+
+  }
+
 }
